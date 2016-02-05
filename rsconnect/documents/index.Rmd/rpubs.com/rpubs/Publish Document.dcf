@@ -1,0 +1,7 @@
+name: Publish Document
+account: rpubs
+server: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/150792/2a88da1e2a634914973a47850a0059cc
+bundleId: https://api.rpubs.com/api/v1/document/150792/2a88da1e2a634914973a47850a0059cc
+url: http://rpubs.com/r10028/150792
+when: 1454695723.15814

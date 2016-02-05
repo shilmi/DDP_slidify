@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eruptions of the Old Faithful</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Eruptions of the Old Faithful">
+  <meta name="author" content="shilmi">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Eruptions of the Old Faithful</h1>
+    <h2>Old Faithful</h2>
+    <p>shilmi<br/>Student for this course</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>About the project</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is my slidify project done as part of Develop Data Project Course.
+In this presentation we could see that using slidify we can produce presentation directly by executing R Code (embedded code chunks).</p>
+
+<p>Using slidify we can create presentation using HTML5.
+Slidify presenations are just HTML files.</p>
+
+<h2>Predicting Geysers</h2>
+
+<h1>OLD FAITHFUL GEYSER</h1>
+
+<p>Old Faithful is a cone geyser located in Wyoming, in Yellowstone National Park in the United States. Old Faithful was named in 1870 during the Washburn-Langford-Doane Expedition and was the first geyser in the park to receive a name. </p>
+
+<p>It is one of the most predictable geographical features on Earth, erupting almost every 63 minutes. The geyser, as well as the nearby Old Faithful Inn, is part of the Old Faithful Historic District. </p>
+
+<p>Location Upper Geyser Basin, Yellowstone National Park, Teton County, Wyoming Coordinates 44.460479N -110.8281591 [1]Elevation 7,349 feet (2,240 m) [2] Type Cone geyser Eruption height 106 feet (32 m) to 185 feet (56 m) Frequency 45 to 125 minutes Duration 1.5 to 5 minutes Discharge 3,700 US gallons (14 m3) to 8,400 US gallons (32 m3) </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Loading Dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Faithful data set (available as part of R) is about waiting time between eruptions and the duration of the eruption for the Old Faithful geyser in Yellowstone National Park, Wyoming, USA. This has a data frame with 272 observations on 2 variables. First field is eruptions (in mins), Second field is waiting time (in mins)</p>
+
+<pre><code class="r">#attach(faithful)
+summary(faithful)
+</code></pre>
+
+<pre><code>##    eruptions        waiting    
+##  Min.   :1.600   Min.   :43.0  
+##  1st Qu.:2.163   1st Qu.:58.0  
+##  Median :4.000   Median :76.0  
+##  Mean   :3.488   Mean   :70.9  
+##  3rd Qu.:4.454   3rd Qu.:82.0  
+##  Max.   :5.100   Max.   :96.0
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Creating Eruption Histogram</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Using faithful data set we will be creating a histogram using R code. </p>
+
+<pre><code class="r">#attach(faithful)
+hist(eruptions, xlab=&quot;Eruption duration&quot;, ylab=&quot;Waiting Time&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+<pre><code class="r">plot(eruptions, waiting, xlab=&quot;Eruption duration&quot;, ylab=&quot;Waiting Time&quot;)     
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2-2.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Creating Eruption Histogram</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Using faithful data set we will be creating a histogram using R code. </p>
+
+<pre><code class="r">plot(eruptions, waiting, xlab=&quot;Eruption duration&quot;, ylab=&quot;Waiting Time&quot;)     
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3"> </p>
+
+<h2>Thank You ! :)</h2>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='About the project'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Loading Dataset'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Creating Eruption Histogram'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Creating Eruption Histogram'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
